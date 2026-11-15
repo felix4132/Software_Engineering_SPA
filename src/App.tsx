@@ -31,7 +31,10 @@ export const App = () => {
                                 />
                             }
                         />
-                        <Route path='/' />
+                        <Route
+                            path='/'
+                            element={<Navigate to='/search-results' replace />}
+                        />
                         <Route
                             path='/search-results'
                             element={<SearchResults />}
